@@ -54,6 +54,9 @@ kubectl version
 aws --version
 aws sts get-caller-identity
 
+# Get your cluster kubeconfig
+aws eks update-kubeconfig --region <YOUR-CLUSTER-REGION> --name <YOUR-CLUSTER-NAME>
+
 # Expected: 0.32.0 or later
 eksctl version
 ```
